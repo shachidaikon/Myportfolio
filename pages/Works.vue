@@ -18,7 +18,12 @@
       </transition>
     </v-row>
     <v-spacer></v-spacer>
-    <v-row justify="space-around" align-content="start" style="height: 70vh">
+    <v-row
+      justify="space-around"
+      align-content="start"
+      align-content-xl="center"
+      style="height: 70vh"
+    >
       <v-col
         v-for="card in cards"
         :key="card.title"
@@ -44,7 +49,6 @@
 
           <v-card-actions>
             <v-btn color="orange" text> Share </v-btn>
-
             <v-btn color="orange" text> Explore </v-btn>
           </v-card-actions>
         </v-card>

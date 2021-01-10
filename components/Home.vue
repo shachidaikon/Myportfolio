@@ -4,8 +4,8 @@
       <v-row>
         <transition appear>
           <v-col class="home__content-text">
-            <h1>Ryo Takayama's</h1>
-            <h1>PortFolio</h1>
+            <h1>Shachi Daikon's</h1>
+            <h1>Portfolio</h1>
           </v-col>
         </transition>
       </v-row>

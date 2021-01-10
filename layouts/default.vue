@@ -61,7 +61,7 @@ export default {
         },
       ],
       miniVariant: false,
-      title: "Ryo Takayama's Portfolio",
+      title: "Shachi Daikon's Portfolio",
     }
   },
 }
