@@ -24,17 +24,17 @@
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 100vh;
+  height: 92vh;
 
   &-text {
-    color: white;
+    color: rgb(249, 249, 249);
     text-align: center;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: bold;
   }
 
   .v-enter-active {
-    transition: opacity 1s;
+    transition: opacity 3s;
   }
 
   .v-enter {

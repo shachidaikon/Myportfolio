@@ -6,6 +6,7 @@
       :clipped="clipped"
       fixed
       app
+      color="rgb(249,249,249)"
     >
       <v-list>
         <v-list-item
@@ -24,12 +25,12 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar :clipped-left="clipped" fixed app>
+    <v-app-bar :clipped-left="clipped" fixed app color="rgb(249,249,249)">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title v-text="title" />
+      <v-toolbar-title class="colorrize" v-text="title" />
       <v-spacer />
     </v-app-bar>
-    <v-main>
+    <v-main class="whitenize">
       <nuxt />
     </v-main>
   </v-app>
@@ -50,13 +51,28 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
+          title: 'About',
+          to: '/About',
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Works',
+          to: '/Works',
         },
       ],
       miniVariant: false,
-      title: 'Vuetify.js',
+      title: "Ryo Takayama's Portfolio",
     }
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.colorrize {
+  color: rgb(116, 166, 76);
+  font-weight: bold;
+}
+.whitenize {
+  background-color: rgb(249, 249, 249);
+}
+</style>
