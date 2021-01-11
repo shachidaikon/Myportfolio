@@ -1,8 +1,12 @@
 <template>
-  <v-container fluid class="Works">
+  <v-container
+    fluid
+    style="background-color: rgb(217, 234, 236)"
+    class="py-12 my-12"
+  >
     <v-row class="justify-center" no-gutters>
       <transition appear>
-        <v-col cols="12">
+        <v-col cols="12" style="background-color: rgb(217, 234, 236)">
           <div
             class="text-center mt-4 text-subtitle-1 text-md-h6 text-lg-h6 text-xl-h5 font-weight-bold"
             style="color: rgb(116, 166, 76)"
@@ -17,12 +21,7 @@
         </v-col>
       </transition>
     </v-row>
-    <v-row
-      justify="space-around"
-      align-content="start"
-      align-content-xl="center"
-      style="height: 70vh"
-    >
+    <v-row justify="space-around" align-content="start">
       <v-col
         v-for="card in cards"
         :key="card.title"
@@ -32,15 +31,9 @@
         :lg="card.lg"
         :xl="card.xl"
       >
-        <v-card class="mx-auto" max-width="400">
-          <v-img
-            class="white--text align-end pt-n100"
-            height="200px"
-            :src="card.src"
-          >
-            <v-card-title v-text="card.title"></v-card-title>
-          </v-img>
-
+        <v-card class="mx-auto mb-8" max-width="400">
+          <v-img height="200px" :src="card.src"> </v-img>
+          <v-card-title v-text="card.title"></v-card-title>
           <v-card-subtitle class="pb-0" v-text="card.subtitle">
           </v-card-subtitle>
 
@@ -90,16 +83,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.Works {
-  color: rgb(60, 60, 60);
-  font-size: 24px;
-  font-weight: bold;
-}
-
 .v-enter-active {
   transition: opacity 2s;
 }
-
 .v-enter {
   opacity: 0;
 }

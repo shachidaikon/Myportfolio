@@ -1,10 +1,10 @@
 <template>
-  <v-container fluid class="About">
+  <v-container fluid class="About py-12 my-12">
     <v-row class="justify-center" no-gutters>
       <transition appear>
         <v-col cols="12">
           <div
-            class="text-center mt-4 text-subtitle-1 text-md-h6 text-lg-h6 text-xl-h5 font-weight-bold"
+            class="text-center text-subtitle-1 text-md-h6 text-lg-h6 text-xl-h5 font-weight-bold"
             style="color: rgb(116, 166, 76)"
           >
             About
@@ -18,9 +18,7 @@
       </transition>
     </v-row>
     <v-row
-      align-content="center"
-      justify="center"
-      class="mt-3 mt-md-10 mt-lg-10 mt-xl-10"
+      class="mt-10 mt-md-10 mt-lg-10 mt-xl-10 justify-center align-content-center"
     >
       <transition appear name="profile">
         <v-col
@@ -50,7 +48,7 @@
           <div
             v-for="(text, index) in texts.text.split('\n')"
             :key="index"
-            class="text-center text-justify text-body-1 text-sm-body-1 text-md-h6 text-lg-h5 text-xl-h5 font-weight-bold"
+            class="text-center text-body-1 text-sm-body-1 text-md-h6 text-lg-h5 text-xl-h5 font-weight-bold"
           >
             {{ texts.text }}
           </div>
@@ -85,10 +83,7 @@ export default {
 
 <style lang="scss" scoped>
 .About {
-  color: rgb(60, 60, 60);
   text-align: center;
-  font-size: 32px;
-  font-weight: bold;
 }
 
 .v-enter-active {

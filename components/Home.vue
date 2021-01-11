@@ -1,6 +1,6 @@
 <template>
   <section>
-    <v-container fluid fill-height class="home__content">
+    <v-container fluid fill-height class="home__content mb-12">
       <v-row>
         <transition appear>
           <v-col class="home__content-text">
@@ -29,6 +29,29 @@
   </section>
 </template>
 
+<script>
+export default {
+  data: () => ({
+    avatar: {
+      src: require('../assets/profile.jpg'),
+      xs: 12,
+      sm: 12,
+      md: 6,
+      lg: 4,
+      xl: 6,
+    },
+    texts: {
+      text: 'FirstLine\nSecondLine\nThirdLine\nLastLine',
+      xs: 12,
+      sm: 12,
+      md: 6,
+      lg: 4,
+      xl: 6,
+    },
+  }),
+}
+</script>
+
 <style lang="scss" scoped>
 .home__content {
   background: url('../assets/senro.png');
@@ -37,10 +60,8 @@
   width: 100%;
   height: 92vh;
 
-  &-text {
-    color: rgb(249, 249, 249);
+  .About {
     text-align: center;
-    font-size: 48px;
   }
 
   .v-enter-active {
@@ -51,6 +72,17 @@
     opacity: 0;
   }
   .v-enter-to {
+    opacity: 1;
+  }
+  .profile-enter-active {
+    transition: opacity 5s;
+  }
+
+  .profile-enter {
+    opacity: 0;
+  }
+
+  .profile-enter-to {
     opacity: 1;
   }
 }
