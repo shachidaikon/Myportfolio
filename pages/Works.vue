@@ -4,20 +4,19 @@
       <transition appear>
         <v-col cols="12">
           <div
-            class="text-center mt-4 text-subtitle-1 text-md-h6 text-lg-h6 text-xl-h5"
+            class="text-center mt-4 text-subtitle-1 text-md-h6 text-lg-h6 text-xl-h5 font-weight-bold"
             style="color: rgb(116, 166, 76)"
           >
             Works
           </div>
           <div
-            class="text-center mb-10 text-h5 text-sm-h4 text-md-h3 text-lg-h3 text-xl-h2"
+            class="text-center mb-10 text-h5 text-sm-h4 text-md-h3 text-lg-h3 text-xl-h2 font-weight-bold"
           >
             製作したWebページ
           </div>
         </v-col>
       </transition>
     </v-row>
-    <v-spacer></v-spacer>
     <v-row
       justify="space-around"
       align-content="start"

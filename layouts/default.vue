@@ -37,6 +37,7 @@
 </template>
 
 <script>
+import { mdiAccount } from '@mdi/js'
 export default {
   data() {
     return {
@@ -50,7 +51,7 @@ export default {
           to: '/',
         },
         {
-          icon: 'mdi-chart-bubble',
+          icon: mdiAccount,
           title: 'About',
           to: '/About',
         },
