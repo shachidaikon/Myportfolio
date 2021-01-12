@@ -6,7 +6,7 @@
   >
     <v-row class="justify-center" no-gutters>
       <transition appear>
-        <v-col cols="12" style="background-color: rgb(217, 234, 236)">
+        <v-col cols="12">
           <div
             class="text-center mt-4 text-subtitle-1 text-md-h6 text-lg-h6 text-xl-h5 font-weight-bold"
             style="color: rgb(116, 166, 76)"

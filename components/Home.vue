@@ -5,7 +5,7 @@
         <transition appear>
           <v-col class="home__content-text">
             <div
-              class="text-center text-h3 text-sm-h2 text-md-h1 text-lg-h1 text-xl-h1 font-weight-bold"
+              class="text-center text-h4 text-sm-h2 text-md-h1 text-lg-h1 text-xl-h1 font-weight-bold"
               style="
                 color: rgb(249, 249, 249);
                 text-shadow: 1px 2px 3px #808080;
@@ -14,7 +14,7 @@
               Shachi Daikon's
             </div>
             <div
-              class="text-center text-h3 text-sm-h2 text-md-h1 text-lg-h1 text-xl-h1 font-weight-bold"
+              class="text-center text-h4 text-sm-h2 text-md-h1 text-lg-h1 text-xl-h1 font-weight-bold"
               style="
                 color: rgb(249, 249, 249);
                 text-shadow: 1px 2px 3px #808080;

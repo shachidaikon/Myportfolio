@@ -4,7 +4,7 @@
       <transition appear>
         <v-col cols="12">
           <div
-            class="text-center text-subtitle-1 text-md-h6 text-lg-h6 text-xl-h5 font-weight-bold"
+            class="text-center text-subtitle-1 text-md-h6 text-lg-h6 text-xl-h5 font-weight-bold pt-n4"
             style="color: rgb(116, 166, 76)"
           >
             About
@@ -46,11 +46,9 @@
           style="max-width: 500px"
         >
           <div
-            v-for="(text, index) in texts.text.split('\n')"
-            :key="index"
-            class="text-center text-body-1 text-sm-body-1 text-md-h6 text-lg-h5 text-xl-h5 font-weight-bold"
+            class="text-justify text-body-2 text-sm-body-1 text-md-body-1 text-lg-body-1 text-xl-body-1 font-weight-bold"
           >
-            {{ texts.text }}
+            <p style="white-space: pre-wrap">{{ texts.text }}</p>
           </div>
         </v-col>
       </transition>
@@ -70,7 +68,8 @@ export default {
       xl: 6,
     },
     texts: {
-      text: 'FirstLine\nSecondLine\nThirdLine\nLastLine',
+      text:
+        '平成11年生まれ、大学３年生の高山伶と申します。\n\n明治大学総合数理学部に在学中。\n\nコロナ禍でのオンラインオープンキャンパスで、所属する研究室の特設Webページ制作に携わり、Webの世界に足を踏み入れる。\n\n現在は祖父母の介助をしながらWebアプリケーション制作に勤しむ。',
       xs: 12,
       sm: 12,
       md: 6,
