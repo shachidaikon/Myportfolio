@@ -29,29 +29,6 @@
   </section>
 </template>
 
-<script>
-export default {
-  data: () => ({
-    avatar: {
-      src: require('../assets/profile.jpg'),
-      xs: 12,
-      sm: 12,
-      md: 6,
-      lg: 4,
-      xl: 6,
-    },
-    texts: {
-      text: 'FirstLine\nSecondLine\nThirdLine\nLastLine',
-      xs: 12,
-      sm: 12,
-      md: 6,
-      lg: 4,
-      xl: 6,
-    },
-  }),
-}
-</script>
-
 <style lang="scss" scoped>
 .home__content {
   background: url('../assets/senro.png');

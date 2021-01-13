@@ -17,9 +17,7 @@
         </v-col>
       </transition>
     </v-row>
-    <v-row
-      class="mt-10 mt-md-10 mt-lg-10 mt-xl-10 justify-center align-content-center"
-    >
+    <v-row class="mt-10 mt-md-10 mt-lg-10 mt-xl-10 justify-center align-center">
       <transition appear name="profile">
         <v-col
           :cols="avatar.xs"
@@ -45,6 +43,9 @@
           class="pr-md-10 pr-lg-14 pr-xl-15"
           style="max-width: 500px"
         >
+          <div class="text-justify text-h6 font-weight-bold mb-4">
+            高山 伶(タカヤマ リョウ)
+          </div>
           <div
             class="text-justify text-body-2 text-sm-body-1 text-md-body-1 text-lg-body-1 text-xl-body-1 font-weight-bold"
           >
@@ -64,16 +65,16 @@ export default {
       xs: 12,
       sm: 12,
       md: 6,
-      lg: 4,
+      lg: 6,
       xl: 6,
     },
     texts: {
       text:
-        '平成11年生まれ、大学３年生の高山伶と申します。\n\n明治大学総合数理学部に在学中。\n\nコロナ禍でのオンラインオープンキャンパスで、所属する研究室の特設Webページ制作に携わり、Webの世界に足を踏み入れる。\n\n現在は祖父母の介助をしながらWebアプリケーション制作に勤しむ。',
+        '仙台市出身、平成11年生まれの大学３年生。\n\n明治大学総合数理学部に在学中。ゼミの活動を通して、世の中にある課題を発見し、情報技術を使って解決へアプローチする手法を学ぶ。\n\nコロナ禍でのオンラインオープンキャンパスで、所属する研究室の特設Webページ制作に携わり、Webの世界に足を踏み入れる。\n\n現在は祖父母宅に居候し、祖父母の介助をしながらWebアプリケーション制作に勤しむ。',
       xs: 12,
       sm: 12,
       md: 6,
-      lg: 4,
+      lg: 6,
       xl: 6,
     },
   }),

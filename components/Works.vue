@@ -21,15 +21,15 @@
         </v-col>
       </transition>
     </v-row>
-    <v-row justify="space-around" align-content="start">
+    <v-row justify="center" align-content="center">
       <v-col
         v-for="card in cards"
         :key="card.title"
-        :cols="card.xs"
-        :sm="card.sm"
-        :md="card.md"
-        :lg="card.lg"
-        :xl="card.xl"
+        cols="12"
+        sm="12"
+        md="12"
+        lg="6"
+        xl="6"
       >
         <v-card class="mx-auto mb-8" max-width="400">
           <v-img height="200px" :src="card.src"> </v-img>
@@ -37,11 +37,23 @@
           <v-card-subtitle class="pb-0" v-text="card.subtitle">
           </v-card-subtitle>
 
-          <v-card-text class="text--primary" v-text="card.text"> </v-card-text>
+          <v-card-text
+            class="text--primary mt-3"
+            style="white-space: pre-wrap"
+            v-text="card.text"
+          >
+          </v-card-text>
 
           <v-card-actions>
-            <v-btn color="orange" text> Share </v-btn>
-            <v-btn color="orange" text> Explore </v-btn>
+            <v-btn
+              v-if="card.link"
+              color="rgb(116,166,76)"
+              :href="card.link"
+              target="_blank"
+              text
+            >
+              VISIT
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -54,17 +66,41 @@ export default {
   data: () => ({
     cards: [
       {
-        title: 'Pre-fab homes',
-        subtitle: 'This is example',
-        src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg',
+        title: '研究室紹介ページ',
+        subtitle: 'STUDIOを利用して作成',
+        src: require('../assets/ocimg.jpg'),
         text:
-          'brbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrb',
+          'STUDIOでデザインを担当。レスポンシブに対応させる点で苦戦した。\nこの時、Webアプリ制作会社で実務経験のあるゼミの先輩に多くを学び、デザインだけでなく、自分もWebアプリケーションを実装してみたいと考えるようになる。',
+        link: 'https://keita-lab.jp/OC2020',
+      },
+      {
+        title: 'SkillUpChat',
+        subtitle: 'Vue3, Firebase, を用いて制作',
+        src: require('../assets/Skillupimg.png'),
+        text:
+          'モダンなWeb制作技術を学び、スキルアップするために初めて制作したアプリケーション。\n',
+        link: 'https://skillupchat.web.app/',
         xs: 12,
         sm: 12,
-        md: 6,
+        md: 12,
         lg: 6,
         xl: 6,
       },
+
+      {
+        title: 'ポートフォリサイト',
+        subtitle: 'Nuxt.js, Vuetify, Netlifyを用いて制作',
+        src: require('../assets/Portfolioimg.png'),
+        text:
+          '静的サイトということでNuxt.jsのSSGを利用して実装。ホスティングはNetlifyで行った。\nレスポンシブデザインにも考慮して制作。',
+        link: '',
+        xs: 12,
+        sm: 12,
+        md: 12,
+        lg: 6,
+        xl: 6,
+      },
+
       {
         title: 'Favorite road trips',
         subtitle: 'This is example',
