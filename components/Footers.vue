@@ -8,9 +8,15 @@
       style="background-color: rgb(188, 213, 55)"
     >
       <v-card-text>
-        <v-btn v-for="icon in icons" :key="icon" class="mx-4" icon>
-          <v-icon size="24px">
-            {{ icon }}
+        <v-btn
+          v-for="icon in icons"
+          :key="icon.src"
+          class="mx-4"
+          icon
+          :href="icon.link"
+        >
+          <v-icon size="40px">
+            {{ icon.src }}
           </v-icon>
         </v-btn>
       </v-card-text>
@@ -25,9 +31,15 @@
 </template>
 
 <script>
+import { mdiGithub } from '@mdi/js'
 export default {
   data: () => ({
-    icons: ['mdi-home', 'mdi-email', 'mdi-calendar', 'mdi-delete'],
+    icons: [
+      {
+        src: mdiGithub,
+        link: 'https://github.com/shachidaikon',
+      },
+    ],
   }),
 }
 </script>

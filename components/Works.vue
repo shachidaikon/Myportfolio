@@ -78,7 +78,7 @@ export default {
         subtitle: 'Vue3, Firebase, を用いて制作',
         src: require('../assets/Skillupimg.png'),
         text:
-          'モダンなWeb制作技術を学び、スキルアップするために初めて制作したアプリケーション。\n',
+          'モダンなWeb制作技術を学び、スキルアップするために初めて制作したアプリケーション。\nWeb技術を本格的に学習し始めて１ヶ月余りで作り上げた。',
         link: 'https://skillupchat.web.app/',
         xs: 12,
         sm: 12,
@@ -102,11 +102,11 @@ export default {
       },
 
       {
-        title: 'Favorite road trips',
-        subtitle: 'This is example',
-        src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg',
+        title: 'Witty Game Console',
+        subtitle: 'Vue3, TypeScriptを用いて鋭意製作中',
+        src: require('../assets/wittyconsoleimg.png'),
         text:
-          'brbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrbrb',
+          'もしも据え置き型ゲーム機にディスプレイにディスプレイがついてたら...\nこのアイデアを発端に様々な機能をVue3とTypeScriptを使用して実装していきます。',
         xs: 12,
         sm: 12,
         md: 6,

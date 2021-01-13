@@ -27,7 +27,7 @@
                   {{ skill.name }}
                 </v-card-title>
                 <v-card-text>
-                  <v-chip>使用歴: {{ skill.years }}年</v-chip>
+                  <v-chip>使用歴: {{ skill.long }}</v-chip>
                   <p>
                     {{ skill.description }}
                   </p>
@@ -47,33 +47,31 @@ export default {
     return {
       skills: [
         {
-          name: 'C',
-          description:
-            'RTOS上で動作する組込みソフトウェアのコーディング経験があります',
-          years: 8,
+          name: 'TypeScript',
+          description: '現在研究に用いるためのwebページで使用中。',
+          long: '2ヶ月',
         },
         {
-          name: 'Ruby',
-          description:
-            'Railsでの開発だけでなくmrubyのデバッガーの開発経験もあります',
-          years: 2,
-        },
-        {
-          name: 'HTML/CSS',
-          description:
-            'デザインテンプレートを使用してページをコーディングする程度です',
-          years: 1,
+          name: 'HTML/CSS/SCSS',
+          description: 'レスポンシブ対応にも慣れてきた。',
+          long: '1年',
         },
         {
           name: 'JavaScript',
-          description: '業務では必要があれば書きます。最近は趣味でも書きます',
-          years: 1,
+          description: 'ES6以降の書き方も習得。',
+          long: '1年',
         },
         {
-          name: 'Go',
+          name: 'Vue',
           description:
-            '趣味のレベルではありますが動向をウォッチしている言語です',
-          years: 1,
+            '簡単なアプリケーションを実装できる。CompositionAPIにも手を出し始める。',
+          long: '3ヶ月',
+        },
+        {
+          name: 'プロトタイピング',
+          description:
+            '素早くアイデアを具現化・検証し、フィードバックを経て実装。',
+          long: '1年',
         },
       ],
     }
