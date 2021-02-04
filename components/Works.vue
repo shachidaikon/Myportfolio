@@ -104,9 +104,10 @@ export default {
       {
         title: 'Witty Game Console',
         subtitle: 'Vue3, TypeScriptを用いて鋭意製作中',
-        src: require('../assets/wittyconsoleimg.png'),
+        src: require('../assets/WGC.jpg'),
         text:
-          'もしも据え置き型ゲーム機にディスプレイにディスプレイがついてたら...\nこのアイデアを発端に様々な機能をVue3とTypeScriptを使用して実装していきます。',
+          'もしも据え置き型ゲーム機にディスプレイがついてたら...\nこのアイデアを発端に様々な機能をVue3とTypeScriptを使用して実装していきます。',
+        link: 'https://youtu.be/4WgxJo4LhEM',
         xs: 12,
         sm: 12,
         md: 6,
