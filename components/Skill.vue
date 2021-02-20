@@ -73,6 +73,11 @@ export default {
             '素早くアイデアを具現化・検証し、フィードバックを経て実装。',
           long: '1年',
         },
+        {
+          name: 'PHP',
+          description: 'Laravel鋭意勉強中',
+          long: '2ヶ月',
+        },
       ],
     }
   },

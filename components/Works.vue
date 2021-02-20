@@ -78,8 +78,8 @@ export default {
         subtitle: 'Vue3, Firebase, を用いて制作',
         src: require('../assets/Skillupimg.png'),
         text:
-          'モダンなWeb制作技術を学び、スキルアップするために初めて制作したアプリケーション。\nWeb技術を本格的に学習し始めて１ヶ月余りで作り上げた。',
-        link: 'https://skillupchat.web.app/',
+          'モダンなWeb制作技術を学び、スキルアップするために初めて制作したアプリケーション。\nWeb技術を本格的に学習し始めて１ヶ月余りで作り上げた。(GitHubには先日アップ)',
+        link: 'https://re-skillup-chat.web.app/',
         xs: 12,
         sm: 12,
         md: 12,
